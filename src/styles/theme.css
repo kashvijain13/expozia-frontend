@@ -1,0 +1,193 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ===============================
+     EXPOXIA — Perfect Premium Dark
+     Balanced Slate Intelligence System
+     =============================== */
+
+  /* Core surfaces - Sophisticated Slate System */
+  --expoxia-bg: #0A0E14;              /* Deep slate background */
+  --expoxia-bg-secondary: #0F1419;    /* Secondary depth */
+  --expoxia-surface: #151B23;         /* Elevated card surface */
+  --expoxia-surface-2: #1E252E;       /* Nested surface */
+  --expoxia-sidebar-bg: #0C1015;      /* Sidebar base */
+  --expoxia-input-bg: #0D1117;        /* Input background */
+
+  /* Brand - Electric Accent System */
+  --expoxia-accent: #00D9FF;          /* Electric cyan primary */
+  --expoxia-accent-2: #0EA5E9;        /* Sky blue secondary */
+  --expoxia-accent-3: #3B82F6;        /* Deep blue tertiary */
+  --expoxia-emerald: #10B981;         /* Emerald for success */
+
+  /* Text - Ultra High Contrast */
+  --expoxia-text: #FFFFFF;
+  --expoxia-text-secondary: rgba(255, 255, 255, 0.70);
+  --expoxia-text-tertiary: rgba(255, 255, 255, 0.50);
+
+  /* Status */
+  --expoxia-alert: #F87171;           /* Coral red for errors */
+  --expoxia-success: #10B981;         /* Emerald green */
+  --expoxia-warning: #FBBF24;         /* Amber */
+
+  /* Lines / borders / rings */
+  --expoxia-border: rgba(0, 217, 255, 0.15);
+  --expoxia-border-subtle: rgba(255, 255, 255, 0.08);
+  --expoxia-ring: rgba(0, 217, 255, 0.50);
+
+  /* Shadows / glow (premium depth) */
+  --expoxia-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --expoxia-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.7);
+  --expoxia-glow: 0 0 24px rgba(0, 217, 255, 0.3);
+  --expoxia-glow-emerald: 0 0 24px rgba(16, 185, 129, 0.3);
+
+  /* Spacing System - 8pt */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 40px;
+  --spacing-6: 48px;
+
+  /* Border Radius */
+  --radius: 16px;
+
+  /* Animation Easing */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Type */
+  --font-size: 16px;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  /* ===============================
+     SHADCN/TW MAPPINGS (BRANDED)
+     =============================== */
+  --background: var(--expoxia-bg);
+  --foreground: var(--expoxia-text);
+
+  --card: var(--expoxia-surface);
+  --card-foreground: var(--expoxia-text);
+
+  --popover: var(--expoxia-surface);
+  --popover-foreground: var(--expoxia-text);
+
+  --primary: var(--expoxia-accent);
+  --primary-foreground: var(--expoxia-bg);
+
+  --secondary: var(--expoxia-surface-2);
+  --secondary-foreground: var(--expoxia-text);
+
+  --muted: var(--expoxia-surface-2);
+  --muted-foreground: var(--expoxia-text-secondary);
+
+  --accent: var(--expoxia-accent);
+  --accent-foreground: var(--expoxia-bg);
+
+  --destructive: var(--expoxia-alert);
+  --destructive-foreground: var(--expoxia-text);
+
+  --border: var(--expoxia-border);
+
+  --input: var(--expoxia-border);
+  --input-background: var(--expoxia-input-bg);
+
+  --switch-background: rgba(255, 255, 255, 0.20);
+
+  --ring: var(--expoxia-ring);
+
+  /* Charts */
+  --chart-1: var(--expoxia-accent);
+  --chart-2: var(--expoxia-accent-2);
+  --chart-3: var(--expoxia-accent-3);
+  --chart-4: var(--expoxia-emerald);
+  --chart-5: var(--expoxia-alert);
+
+  /* Sidebar tokens */
+  --sidebar: var(--expoxia-sidebar-bg);
+  --sidebar-foreground: var(--expoxia-text);
+  --sidebar-primary: var(--expoxia-accent);
+  --sidebar-primary-foreground: var(--expoxia-bg);
+  --sidebar-accent: rgba(0, 217, 255, 0.10);
+  --sidebar-accent-foreground: var(--expoxia-text);
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: var(--expoxia-ring);
+}
+
+.dark {
+  /* Enhanced contrast variant */
+  --expoxia-bg: #08090E;
+  --expoxia-bg-secondary: #0D1117;
+  --expoxia-surface: #12171F;
+  --expoxia-surface-2: #1A2029;
+  --expoxia-sidebar-bg: #0A0D12;
+  --expoxia-input-bg: #0B0F14;
+
+  --expoxia-text: #FFFFFF;
+  --expoxia-text-secondary: rgba(255, 255, 255, 0.75);
+
+  --expoxia-border: rgba(0, 217, 255, 0.18);
+  --expoxia-ring: rgba(0, 217, 255, 0.55);
+
+  /* Keep accents consistent */
+  --expoxia-accent: #00D9FF;
+  --expoxia-accent-2: #0EA5E9;
+  --expoxia-accent-3: #3B82F6;
+  --expoxia-emerald: #10B981;
+  --expoxia-alert: #F87171;
+  --expoxia-success: #10B981;
+  --expoxia-warning: #FBBF24;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    font-size: var(--font-size);
+  }
+}
